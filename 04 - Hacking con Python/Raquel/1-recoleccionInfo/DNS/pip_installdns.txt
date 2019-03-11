@@ -1,0 +1,355 @@
+Microsoft Windows [Versión 10.0.17134.523]
+(c) 2018 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\AULA12>pip
+Traceback (most recent call last):
+  File "C:\Users\AULA12\Anaconda3\Scripts\pip-script.py", line 6, in <module>
+    from pip._internal import main
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_internal\__init__.py", line 42, in <module>
+    from pip._internal import cmdoptions
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_internal\cmdoptions.py", line 16, in <module>
+    from pip._internal.index import (
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_internal\index.py", line 25, in <module>
+    from pip._internal.download import HAS_TLS, is_url, path_to_url, url_to_path
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_internal\download.py", line 40, in <module>
+    from pip._internal.utils.logging import indent_log
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_internal\utils\logging.py", line 9, in <module>
+    from pip._internal.utils.misc import ensure_dir
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_internal\utils\misc.py", line 21, in <module>
+    from pip._vendor import pkg_resources
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 3088, in <module>
+    @_call_aside
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 3072, in _call_aside
+    f(*args, **kwargs)
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 3101, in _initialize_master_working_set
+    working_set = WorkingSet._build_master()
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 565, in _build_master
+    ws = cls()
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 558, in __init__
+    self.add_entry(entry)
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 614, in add_entry
+    for dist in find_distributions(entry, True):
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 1964, in find_on_path
+    for dist in factory(fullpath):
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 2034, in distributions_from_metadata
+    root, entry, metadata, precedence=DEVELOP_DIST,
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 2473, in from_location
+    py_version=py_version, platform=platform, **kw
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 2835, in _reload_version
+    md_version = _version_from_file(self._get_metadata(self.PKG_INFO))
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 2437, in _version_from_file
+    line = next(iter(version_lines), '')
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 2626, in _get_metadata
+    if self.has_metadata(name):
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 1399, in has_metadata
+    return self.egg_info and self._has(self._fn(self.egg_info, name))
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 1504, in _has
+    return os.path.exists(path)
+  File "C:\Users\AULA12\Anaconda3\lib\genericpath.py", line 19, in exists
+    os.stat(path)
+KeyboardInterrupt
+
+C:\Users\AULA12>pip install dns python
+Traceback (most recent call last):
+  File "C:\Users\AULA12\Anaconda3\Scripts\pip-script.py", line 6, in <module>
+    from pip._internal import main
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_internal\__init__.py", line 42, in <module>
+    from pip._internal import cmdoptions
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_internal\cmdoptions.py", line 16, in <module>
+    from pip._internal.index import (
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_internal\index.py", line 25, in <module>
+    from pip._internal.download import HAS_TLS, is_url, path_to_url, url_to_path
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_internal\download.py", line 48, in <module>
+    from pip._internal.utils.ui import DownloadProgressProvider
+  File "C:\Users\AULA12\Anaconda3\lib\site-packages\pip\_internal\utils\ui.py", line 11, in <module>
+    from pip._vendor.progress.bar import (
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 859, in get_code
+  File "<frozen importlib._bootstrap_external>", line 916, in get_data
+KeyboardInterrupt
+
+C:\Users\AULA12>pip install dnspython
+Requirement already satisfied: dnspython in c:\users\aula12\anaconda3\lib\site-packages (1.15.0)
+twisted 18.7.0 requires PyHamcrest>=1.9.0, which is not installed.
+You are using pip version 10.0.1, however version 18.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+C:\Users\AULA12>python -m pip install --upgrade pip
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/c2/d7/90f34cb0d83a6c5631cf71dfe64cc1054598c843a92b400e55675cc2ac37/pip-18.1-py2.py3-none-any.whl (1.3MB)
+    100% |████████████████████████████████| 1.3MB 6.6MB/s
+twisted 18.7.0 requires PyHamcrest>=1.9.0, which is not installed.
+Installing collected packages: pip
+  Found existing installation: pip 10.0.1
+    Uninstalling pip-10.0.1:
+      Successfully uninstalled pip-10.0.1
+Successfully installed pip-18.1
+
+C:\Users\AULA12>python
+Python 3.7.0 (default, Jun 28 2018, 08:04:48) [MSC v.1912 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dns
+>>> quit()
+
+C:\Users\AULA12>pip freeze
+alabaster==0.7.11
+anaconda-client==1.7.2
+anaconda-navigator==1.9.2
+anaconda-project==0.8.2
+appdirs==1.4.3
+asn1crypto==0.24.0
+astroid==2.0.4
+astropy==3.0.4
+atomicwrites==1.2.1
+attrs==18.2.0
+Automat==0.7.0
+Babel==2.6.0
+backcall==0.1.0
+backports.shutil-get-terminal-size==1.0.0
+beautifulsoup4==4.6.3
+bitarray==0.8.3
+bkcharts==0.2
+blaze==0.11.3
+bleach==2.1.4
+bokeh==0.13.0
+boto==2.49.0
+Bottleneck==1.2.1
+certifi==2018.11.29
+cffi==1.11.5
+chardet==3.0.4
+click==6.7
+cloudpickle==0.5.5
+clyent==1.2.2
+colorama==0.3.9
+comtypes==1.1.7
+conda==4.5.11
+conda-build==3.15.1
+constantly==15.1.0
+contextlib2==0.5.5
+cryptography==2.3.1
+cycler==0.10.0
+Cython==0.28.5
+cytoolz==0.9.0.1
+dask==0.19.1
+datashape==0.5.4
+decorator==4.3.0
+defusedxml==0.5.0
+distributed==1.23.1
+dnspython==1.15.0
+docutils==0.14
+entrypoints==0.2.3
+et-xmlfile==1.0.1
+fastcache==1.0.2
+filelock==3.0.8
+Flask==1.0.2
+Flask-Cors==3.0.6
+gevent==1.3.6
+glob2==0.6
+greenlet==0.4.15
+h5py==2.8.0
+heapdict==1.0.0
+html5lib==1.0.1
+hyperlink==18.0.0
+idna==2.7
+imageio==2.4.1
+imagesize==1.1.0
+incremental==17.5.0
+ipykernel==4.10.0
+ipython==6.5.0
+ipython-genutils==0.2.0
+ipywidgets==7.4.1
+isort==4.3.4
+itsdangerous==0.24
+jdcal==1.4
+jedi==0.12.1
+Jinja2==2.10
+jsonschema==2.6.0
+jupyter==1.0.0
+jupyter-client==5.2.3
+jupyter-console==5.2.0
+jupyter-core==4.4.0
+jupyterlab==0.34.9
+jupyterlab-launcher==0.13.1
+keyring==13.2.1
+kiwisolver==1.0.1
+lazy-object-proxy==1.3.1
+llvmlite==0.24.0
+locket==0.2.0
+lxml==4.2.5
+MarkupSafe==1.0
+matplotlib==2.2.3
+mccabe==0.6.1
+menuinst==1.4.14
+mistune==0.8.3
+mkl-fft==1.0.4
+mkl-random==1.0.1
+more-itertools==4.3.0
+mpmath==1.0.0
+msgpack==0.5.6
+multipledispatch==0.6.0
+navigator-updater==0.2.1
+nbconvert==5.4.0
+nbformat==4.4.0
+networkx==2.1
+nltk==3.3
+nose==1.3.7
+notebook==5.6.0
+numba==0.39.0
+numexpr==2.6.8
+numpy==1.15.1
+numpydoc==0.8.0
+odo==0.5.1
+olefile==0.46
+openpyxl==2.5.6
+packaging==17.1
+pandas==0.23.4
+pandocfilters==1.4.2
+parso==0.3.1
+partd==0.3.8
+path.py==11.1.0
+pathlib2==2.3.2
+patsy==0.5.0
+pep8==1.7.1
+pickleshare==0.7.4
+Pillow==5.2.0
+pkginfo==1.4.2
+pluggy==0.7.1
+ply==3.11
+prometheus-client==0.3.1
+prompt-toolkit==1.0.15
+psutil==5.4.7
+py==1.6.0
+pyasn1==0.4.4
+pyasn1-modules==0.2.2
+pycodestyle==2.4.0
+pycosat==0.6.3
+pycparser==2.18
+pycrypto==2.6.1
+pycurl==7.43.0.2
+pyflakes==2.0.0
+Pygments==2.2.0
+pylint==2.1.1
+pyodbc==4.0.24
+pyOpenSSL==18.0.0
+pyparsing==2.2.0
+PySocks==1.6.8
+pytest==3.8.0
+pytest-arraydiff==0.2
+pytest-astropy==0.4.0
+pytest-doctestplus==0.1.3
+pytest-openfiles==0.3.0
+pytest-remotedata==0.3.0
+python-dateutil==2.7.3
+pythonwhois==2.4.3
+pytz==2018.5
+PyWavelets==1.0.0
+pywin32==223
+pywinpty==0.5.4
+PyYAML==3.13
+pyzmq==17.1.2
+QtAwesome==0.4.4
+qtconsole==4.4.1
+QtPy==1.5.0
+requests==2.19.1
+rope==0.11.0
+ruamel-yaml==0.15.46
+scikit-image==0.14.0
+scikit-learn==0.19.2
+scipy==1.1.0
+seaborn==0.9.0
+Send2Trash==1.5.0
+service-identity==17.0.0
+simplegeneric==0.8.1
+singledispatch==3.4.0.3
+six==1.11.0
+snowballstemmer==1.2.1
+sortedcollections==1.0.1
+sortedcontainers==2.0.5
+Sphinx==1.7.9
+sphinxcontrib-websupport==1.1.0
+spyder==3.3.1
+spyder-kernels==0.2.6
+SQLAlchemy==1.2.11
+statsmodels==0.9.0
+sympy==1.1.1
+tables==3.4.4
+tblib==1.3.2
+terminado==0.8.1
+testpath==0.3.1
+toolz==0.9.0
+tornado==5.1
+tqdm==4.26.0
+traitlets==4.3.2
+Twisted==18.7.0
+unicodecsv==0.14.1
+urllib3==1.23
+wcwidth==0.1.7
+webencodings==0.5.1
+Werkzeug==0.14.1
+widgetsnbextension==3.4.1
+win-inet-pton==1.0.1
+win-unicode-console==0.5
+wincertstore==0.2
+wrapt==1.10.11
+xlrd==1.1.0
+XlsxWriter==1.1.0
+xlwings==0.11.8
+xlwt==1.3.0
+zict==0.1.3
+zope.interface==4.5.0
+
+C:\Users\AULA12>dir(dns)
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: D686-70B9
+
+ Directorio de C:\Users\AULA12
+
+No se encuentra el archivo
+
+C:\Users\AULA12>python
+Python 3.7.0 (default, Jun 28 2018, 08:04:48) [MSC v.1912 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> dir(dns)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'dns' is not defined
+>>> import dns
+>>> dir (dans)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'dans' is not defined
+>>> dir (dns)
+['__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__']
+>>>
+>>>
+>>> import dns.resolver
+>>>
+>>> dns.resolver.query('google.com','A')
+<dns.resolver.Answer object at 0x00000177FFD214E0>
+>>>
+>>> dns.resolver.query('google.com','AAAA')
+<dns.resolver.Answer object at 0x00000177FFD215F8>
+>>>
+>>> ans = dns.resolver.query('google.com','A')
+>>> len(ans)
+1
+>>> ans=ans[0]
+>>> type(ans)
+<class 'dns.rdtypes.IN.A.A'>
+>>> quit()
+
+C:\Users\AULA12>
+
+
+
+#/////  VOLVEMOS A EMPEZAR  /////#
+DESINSTALAR ANACONDA Y TODO TODO PARAPONER TODOS EL MISMO .EXE EN WINDOWS Y TRABAJAR CON ELMISMO ENTORNO
+#/////  ******************* /////#
+
+
+
+
+

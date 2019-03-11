@@ -1,0 +1,7 @@
+Parsear el fichero personas.txt para cargar los datos en una lista de diccionarios.
+
+Una vez esten cargados, pedir al usuario un dni, y buscar la persona que tenga ese valor.
+
+Si se encuentra el DNI mostrar los datos de ese elemento. Si no se encuentra informar.
+
+En caso de no disponer del DNI, se debe informar del error (Con excepciones)

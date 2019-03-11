@@ -1,0 +1,7 @@
+nombre = pepe
+edad = 30
+###
+nombre = maria
+edad = 31
+dni = 121243
+###

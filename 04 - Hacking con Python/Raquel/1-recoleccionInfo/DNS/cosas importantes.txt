@@ -1,0 +1,31 @@
+>>> import dns
+>>> import dns.resolver
+>>>
+>>>
+>>> ans = dns.resolver.query('google.com','A')
+>>> len(ans)
+1
+>>> respuesta = ans[0]
+>>>
+>>> respuesta
+<DNS IN A rdata: 172.217.20.110>
+
+>>> respuesta.address
+'172.217.20.110'
+
+
+*************************
+
+
+CUANDO TENGA LA LIBRERIA, me coloco en el directorio del script
+
+Si hay opcion larga, la uso, si no, usa la corta
+
+En el propio script:
+print(resolveDNS(args.domain, args.verbose))
+
+En la linea de comandos:
+python .\ejercicio_dns.py --domain=google.es --reg=A
+ejercicio_dns.py --help
+
+

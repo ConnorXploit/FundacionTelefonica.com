@@ -1,0 +1,35 @@
+Iniciamos Anaconda Prompt desde el menu de Windows.
+
+Una vez en la terminal abierta, nos situaremos en la carpeta actual.
+
+"cd C:/Users/Tururu/Escritorio/Blablaba"
+
+Ahora crearemos con Anaconda un Entorno Virtual para no pisar futuros paquetes de otros proyectos.
+
+"conda create -n nombredelenterno python=3.7"
+
+De esta forma crearemos un entorno con el nombre que le pongamos en "nombredelenterno" y le podemos asignar un python directamente.
+
+Si solo ejecutamos "conda create -n nombredelenterno" no pasa nada. Podremos especificar más tarde las versiones de los paquetes.
+
+Una vez creado el entorno, tenemos que activarlo (siempre que queramos usarlo):
+
+En Windows:
+
+"activate nombredelenterno"
+
+En linux:
+
+"source activate nombredelenterno"
+
+Ahora ya estaremos dentro de nuestro environment. Lo sabremos porque la terminal lo indica por delante del path:
+
+(nombredelenterno) C:/Users/Tururu/Escritorio/Blablaba
+
+Ahora instalaremos los requisitos:
+
+"pip install -r requirements.txt"
+
+Una vez terminado:
+
+"python archivo_a_ejecutar.py"

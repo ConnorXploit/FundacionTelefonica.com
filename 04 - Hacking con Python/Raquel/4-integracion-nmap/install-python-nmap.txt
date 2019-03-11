@@ -1,0 +1,16 @@
+instalar
+https://nmap.org/dist/nmap-7.70-setup.exe
+
+
+Microsoft Windows [Versión 10.0.17134.523]
+(c) 2018 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\AULA12>pip install python-nmap
+Collecting python-nmap
+  Downloading https://files.pythonhosted.org/packages/dc/f2/9e1a2953d4d824e183ac033e3d223055e40e695fa6db2cb3e94a864eaa84/python-nmap-0.6.1.tar.gz (41kB)
+    100% |████████████████████████████████| 51kB 428kB/s
+Installing collected packages: python-nmap
+  Running setup.py install for python-nmap ... done
+Successfully installed python-nmap-0.6.1
+
+C:\Users\AULA12>

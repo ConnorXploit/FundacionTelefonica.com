@@ -1,0 +1,170 @@
+
+C:\Users\AULA12>pip search pythonwhois
+sb2w-pythonwhois (2.4.3)  - Temporary Fork - the original project is `http://cryto.net/pythonwhois` Module for
+                            retrieving and parsing the WHOIS data for a domain. Supports most domains. No
+                            dependencies.
+pythonwhois (2.4.3)       - Module for retrieving and parsing the WHOIS data for a domain. Supports most domains. No
+                            dependencies.
+
+C:\Users\AULA12>pip install pythonwhois
+Collecting pythonwhois
+  Downloading https://files.pythonhosted.org/packages/ca/a7/774fd4928014c2752c33bc0c4ea760c8136e651e4c8dc9825648c646ba72/pythonwhois-2.4.3.tar.gz (293kB)
+    100% |████████████████████████████████| 296kB 820kB/s
+Collecting argparse (from pythonwhois)
+  Downloading https://files.pythonhosted.org/packages/f2/94/3af39d34be01a24a6e65433d19e107099374224905f1e0cc6bbe1fd22a2f/argparse-1.4.0-py2.py3-none-any.whl
+Installing collected packages: argparse, pythonwhois
+  Running setup.py install for pythonwhois ... done
+Successfully installed argparse-1.4.0 pythonwhois-2.4.3
+
+C:\Users\AULA12>import pythonwhois
+"import" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\AULA12>python
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 23:09:28) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pythonwhois
+Traceback (most recent call last):
+  File "C:\Python37\lib\sre_parse.py", line 1021, in parse_template
+    this = chr(ESCAPES[this][1])
+KeyError: '\\s'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Python37\lib\site-packages\pythonwhois\__init__.py", line 1, in <module>
+    from . import net, parse
+  File "C:\Python37\lib\site-packages\pythonwhois\parse.py", line 363, in <module>
+    registrant_regexes = [preprocess_regex(regex) for regex in registrant_regexes]
+  File "C:\Python37\lib\site-packages\pythonwhois\parse.py", line 363, in <listcomp>
+    registrant_regexes = [preprocess_regex(regex) for regex in registrant_regexes]
+  File "C:\Python37\lib\site-packages\pythonwhois\parse.py", line 205, in preprocess_regex
+    regex = re.sub(r"\\s\*\(\?P<([^>]+)>\.\+\)", r"\s*(?P<\1>\S.*)", regex)
+  File "C:\Python37\lib\re.py", line 192, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+  File "C:\Python37\lib\re.py", line 309, in _subx
+    template = _compile_repl(template, pattern)
+  File "C:\Python37\lib\re.py", line 300, in _compile_repl
+    return sre_parse.parse_template(repl, pattern)
+  File "C:\Python37\lib\sre_parse.py", line 1024, in parse_template
+    raise s.error('bad escape %s' % this, len(this))
+re.error: bad escape \s at position 0
+>>> quit()
+
+C:\Users\AULA12>pip uninstall pythonwhois
+Uninstalling pythonwhois-2.4.3:
+  Would remove:
+    c:\python37\lib\site-packages\pythonwhois-2.4.3-py3.7.egg-info
+    c:\python37\lib\site-packages\pythonwhois\*
+    c:\python37\scripts\pwhois
+Proceed (y/n)? s
+Your response ('s') was not one of the expected responses: y, n
+Proceed (y/n)? y
+  Successfully uninstalled pythonwhois-2.4.3
+
+C:\Users\AULA12>pip install python-whois
+Collecting python-whois
+  Downloading https://files.pythonhosted.org/packages/3e/32/3a7fa80b485f4a1c41492c062396441f2abf28865bb65d069c228af165f7/python-whois-0.7.1.tar.gz (83kB)
+    100% |████████████████████████████████| 92kB 983kB/s
+Collecting future (from python-whois)
+  Downloading https://files.pythonhosted.org/packages/90/52/e20466b85000a181e1e144fd8305caf2cf475e2f9674e797b222f8105f5f/future-0.17.1.tar.gz (829kB)
+    100% |████████████████████████████████| 829kB 6.6MB/s
+Installing collected packages: future, python-whois
+  Running setup.py install for future ... done
+  Running setup.py install for python-whois ... done
+Successfully installed future-0.17.1 python-whois-0.7.1
+
+C:\Users\AULA12>python
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 23:09:28) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import whois
+>>> x = whois.whois('google.com')
+>>> x
+{'domain_name': ['GOOGLE.COM', 'google.com'], 'registrar': 'MarkMonitor, Inc.', 'whois_server': 'whois.markmonitor.com', 'referral_url': None, 'updated_date': [datetime.datetime(2018, 2, 21, 18, 36, 40), datetime.datetime(2018, 2, 21, 10, 45, 7, tzinfo=datetime.timezone(datetime.timedelta(days=-1, seconds=57600)))], 'creation_date': [datetime.datetime(1997, 9, 15, 4, 0), datetime.datetime(1997, 9, 15, 0, 0, tzinfo=datetime.timezone(datetime.timedelta(days=-1, seconds=61200)))], 'expiration_date': [datetime.datetime(2020, 9, 14, 4, 0), datetime.datetime(2020, 9, 13, 21, 0, tzinfo=datetime.timezone(datetime.timedelta(days=-1, seconds=61200)))], 'name_servers': ['NS1.GOOGLE.COM', 'NS2.GOOGLE.COM', 'NS3.GOOGLE.COM', 'NS4.GOOGLE.COM', 'ns2.google.com', 'ns4.google.com', 'ns3.google.com', 'ns1.google.com'], 'status': ['clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited', 'clientTransferProhibited https://icann.org/epp#clientTransferProhibited', 'clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited', 'serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited', 'serverTransferProhibited https://icann.org/epp#serverTransferProhibited', 'serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited', 'clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)', 'clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)', 'clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)', 'serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)', 'serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)', 'serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)'], 'emails': ['abusecomplaints@markmonitor.com', 'whoisrequest@markmonitor.com'], 'dnssec': 'unsigned', 'name': None, 'org': 'Google LLC', 'address': None, 'city': None, 'state': 'CA', 'zipcode': None, 'country': 'US'}
+>>> type(x)
+<class 'whois.parser.WhoisCom'>
+>>> from pprint import pprint
+>>> pprint (x)
+{'address': None,
+ 'city': None,
+ 'country': 'US',
+ 'creation_date': [datetime.datetime(1997, 9, 15, 4, 0),
+                   datetime.datetime(1997, 9, 15, 0, 0, tzinfo=datetime.timezone(datetime.timedelta(days=-1, seconds=61200)))],
+ 'dnssec': 'unsigned',
+ 'domain_name': ['GOOGLE.COM', 'google.com'],
+ 'emails': ['abusecomplaints@markmonitor.com', 'whoisrequest@markmonitor.com'],
+ 'expiration_date': [datetime.datetime(2020, 9, 14, 4, 0),
+                     datetime.datetime(2020, 9, 13, 21, 0, tzinfo=datetime.timezone(datetime.timedelta(days=-1, seconds=61200)))],
+ 'name': None,
+ 'name_servers': ['NS1.GOOGLE.COM',
+                  'NS2.GOOGLE.COM',
+                  'NS3.GOOGLE.COM',
+                  'NS4.GOOGLE.COM',
+                  'ns2.google.com',
+                  'ns4.google.com',
+                  'ns3.google.com',
+                  'ns1.google.com'],
+ 'org': 'Google LLC',
+ 'referral_url': None,
+ 'registrar': 'MarkMonitor, Inc.',
+ 'state': 'CA',
+ 'status': ['clientDeleteProhibited '
+            'https://icann.org/epp#clientDeleteProhibited',
+            'clientTransferProhibited '
+            'https://icann.org/epp#clientTransferProhibited',
+            'clientUpdateProhibited '
+            'https://icann.org/epp#clientUpdateProhibited',
+            'serverDeleteProhibited '
+            'https://icann.org/epp#serverDeleteProhibited',
+            'serverTransferProhibited '
+            'https://icann.org/epp#serverTransferProhibited',
+            'serverUpdateProhibited '
+            'https://icann.org/epp#serverUpdateProhibited',
+            'clientUpdateProhibited '
+            '(https://www.icann.org/epp#clientUpdateProhibited)',
+            'clientTransferProhibited '
+            '(https://www.icann.org/epp#clientTransferProhibited)',
+            'clientDeleteProhibited '
+            '(https://www.icann.org/epp#clientDeleteProhibited)',
+            'serverUpdateProhibited '
+            '(https://www.icann.org/epp#serverUpdateProhibited)',
+            'serverTransferProhibited '
+            '(https://www.icann.org/epp#serverTransferProhibited)',
+            'serverDeleteProhibited '
+            '(https://www.icann.org/epp#serverDeleteProhibited)'],
+ 'updated_date': [datetime.datetime(2018, 2, 21, 18, 36, 40),
+                  datetime.datetime(2018, 2, 21, 10, 45, 7, tzinfo=datetime.timezone(datetime.timedelta(days=-1, seconds=57600)))],
+ 'whois_server': 'whois.markmonitor.com',
+ 'zipcode': None}
+>>> x['expiration_date']
+[datetime.datetime(2020, 9, 14, 4, 0), datetime.datetime(2020, 9, 13, 21, 0, tzinfo=datetime.timezone(datetime.timedelta(days=-1, seconds=61200)))]
+>>> fechas = x['expiration_date']
+>>> for f in fechas:
+... print(f)
+  File "<stdin>", line 2
+    print(f)
+        ^
+IndentationError: expected an indented block
+>>> for f in fechas: print(f)
+... for f in fehcas:
+  File "<stdin>", line 2
+    for f in fehcas:
+      ^
+SyntaxError: invalid syntax
+>>> for f in fehcas:    print(f)
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'fehcas' is not defined
+>>> for f in fehcas:
+...     print(f)
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'fehcas' is not defined
+>>> for f in fechas:
+...     print(f)
+...
+2020-09-14 04:00:00
+2020-09-13 21:00:00-07:00

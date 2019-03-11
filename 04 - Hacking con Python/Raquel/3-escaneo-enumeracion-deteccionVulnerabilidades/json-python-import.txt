@@ -1,0 +1,21 @@
+Microsoft Windows [Versión 10.0.17134.523]
+(c) 2018 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\AULA12>import json
+"import" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\AULA12>python
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 23:09:28) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import json
+
+# loads para strings que meto a mano
+# load para importar de un fichero marcando laruta
+>>> data = json.load(open('data.txt'))
+>>> data = json.loads(elementojson)
+
+# dumps para strings que meto a mano
+# dump para importar de un fichero marcando laruta
+>>>cadena = json.dumps(datos, open('datos2.txt'),'w') # abro, parseo y sobreescribo
+>>>cadena = json.dumps(datos, open('datos2.txt'),'a') # abro, parseo y añado

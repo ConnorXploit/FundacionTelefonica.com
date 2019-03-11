@@ -1,0 +1,1 @@
+con whois obtengo informacion sobre el dominio, por ejemplo, expiration date

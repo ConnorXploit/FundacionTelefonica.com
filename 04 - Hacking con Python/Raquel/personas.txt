@@ -1,0 +1,24 @@
+nombre = Juan
+edad = 20
+dni = 1234789
+-------------------
+nombre = Alicia
+edad = 40
+dni = 55566667
+-------------------
+nombre = Maria
+edad = 29
+dni = 989234
+-------------------
+nombre = Pedro
+# Esto es un comentario, ignoralo
+edad = 20
+dni = 993321
+-------------------
+nombre = Julia
+edad = 58
+-------------------
+
+
+
+

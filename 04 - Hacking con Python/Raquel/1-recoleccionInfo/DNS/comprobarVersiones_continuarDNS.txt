@@ -1,0 +1,48 @@
+﻿Microsoft Windows [Versión 10.0.17134.523]
+(c) 2018 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\AULA12>python
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 23:09:28) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> pip -V
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'pip' is not defined
+>>> quit()
+
+C:\Users\AULA12>pip -V
+pip 18.1 from c:\python37\lib\site-packages\pip (python 3.7)
+
+C:\Users\AULA12>pip install dnspython
+Collecting dnspython
+  Downloading https://files.pythonhosted.org/packages/ec/d3/3aa0e7213ef72b8585747aa0e271a9523e713813b9a20177ebe1e939deb0/dnspython-1.16.0-py2.py3-none-any.whl (188kB)
+    100% |████████████████████████████████| 194kB 1.5MB/s
+Installing collected packages: dnspython
+Successfully installed dnspython-1.16.0
+
+C:\Users\AULA12>python
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 23:09:28) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dns
+>>> import dns.resolver
+>>>
+>>>
+>>> ans = dns.resolver.query('google.com','A')
+>>> len(ans)
+1
+>>> respuesta = ans[0]
+>>>
+>>> respuesta
+<DNS IN A rdata: 172.217.20.110>
+>>> respuesta.adress
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'A' object has no attribute 'adress'
+>>> respuesta.address
+'172.217.20.110'
+>>> ans = dns.resolver.query('google.com','MX')
+>>> ans = dns.resolver.query('google.com','A')
+>>>
+>>>
+>>> quit()
+>>>

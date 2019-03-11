@@ -1,0 +1,12 @@
+Microsoft Windows [Versión 10.0.17134.523]
+(c) 2018 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\AULA12>pip install scapy
+Collecting scapy
+  Downloading https://files.pythonhosted.org/packages/d0/04/b8512e5126a1816581767bf95cbf525e0681a22c055bcd45f47ecff60170/scapy-2.4.2.tar.gz (795kB)
+    100% |████████████████████████████████| 798kB 6.3MB/s
+Installing collected packages: scapy
+  Running setup.py install for scapy ... done
+Successfully installed scapy-2.4.2
+
+C:\Users\AULA12>

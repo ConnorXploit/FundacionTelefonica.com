@@ -1,0 +1,29 @@
+Microsoft Windows [Versión 10.0.17134.523]
+(c) 2018 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\AULA12>pip install shodan
+Collecting shodan
+  Downloading https://files.pythonhosted.org/packages/24/36/87e5e4cab32ffeba1c7304f7dadc00b93491bc3b3de0b599ccacfa3b3671/shodan-1.10.4.tar.gz (44kB)
+    100% |████████████████████████████████| 51kB 547kB/s
+Collecting click (from shodan)
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+    100% |████████████████████████████████| 81kB 1.3MB/s
+Collecting click-plugins (from shodan)
+  Downloading https://files.pythonhosted.org/packages/95/dd/fef84cf1678418f241ef542c0288bdf215bdd3e35f1fe03dc5223a2e80ba/click_plugins-1.0.4-py2.py3-none-any.whl
+Collecting colorama (from shodan)
+  Downloading https://files.pythonhosted.org/packages/4f/a6/728666f39bfff1719fc94c481890b2106837da9318031f71a8424b662e12/colorama-0.4.1-py2.py3-none-any.whl
+Requirement already satisfied: requests>=2.2.1 in c:\python37\lib\site-packages (from shodan) (2.21.0)
+Collecting XlsxWriter (from shodan)
+  Downloading https://files.pythonhosted.org/packages/3d/1b/4caecd4efde1d41ba3bef1a81027032a7a6dff7d5112e1731f232c0addb9/XlsxWriter-1.1.2-py2.py3-none-any.whl (142kB)
+    100% |████████████████████████████████| 143kB 1.3MB/s
+Requirement already satisfied: urllib3<1.25,>=1.21.1 in c:\python37\lib\site-packages (from requests>=2.2.1->shodan) (1.24.1)
+Requirement already satisfied: certifi>=2017.4.17 in c:\python37\lib\site-packages (from requests>=2.2.1->shodan) (2018.11.29)
+Requirement already satisfied: idna<2.9,>=2.5 in c:\python37\lib\site-packages (from requests>=2.2.1->shodan) (2.8)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in c:\python37\lib\site-packages (from requests>=2.2.1->shodan) (3.0.4)
+Installing collected packages: click, click-plugins, colorama, XlsxWriter, shodan
+  Running setup.py install for shodan ... done
+Successfully installed XlsxWriter-1.1.2 click-7.0 click-plugins-1.0.4 colorama-0.4.1 shodan-1.10.4
+
+C:\Users\AULA12>
+
+OJO HACE FALTA LICENCIA
