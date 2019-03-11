@@ -1,0 +1,7 @@
+DIIT - Decode:
+	- Get Image : 	ExamenIvan.png
+	- Password : 	MiClave123
+	- Algorithm : 	BlindHide
+		- Options : 1 - 1
+		- Options : ¿LSB? Si
+	- Set Message : Guardar en donde sea con extensión .py
